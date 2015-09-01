@@ -1,0 +1,26 @@
+Daniel Cobb
+SDI - Section 01
+Flow Chart Assignment Brainstorm
+September 1, 2015
+
+Go with what you know: Operating Front End Loader Trash Truck
+Current job for 1+yrs
+
+Start
+    Is dumpster blocked
+Yes>>Stop
+        No
+            Lower forks and arms
+                Insert into dumpster
+                    Is dumpster secure?
+                No>>return to insert
+                    Yes
+                        Lift and dump into truck
+                            Dumpster empty
+                                No>>Shake dumpster
+                                Yes
+                                    Lower dumpster
+                                        Back out from dumpster
+                                            Is dumpster free
+                                        No>> make adjustments return to back out
+                                            Yes>> Stop
