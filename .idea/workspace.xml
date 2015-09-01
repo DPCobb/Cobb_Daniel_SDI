@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a395c982-62c1-4720-aeb3-4d75f4fb8458" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cobb_Daniel_Flowchart_Assignment/Cobb_Daniel_Flowchart_Brainstorm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cobb_Daniel_Flowchart_Assignment/Cobb_Daniel_Flowchart_Brainstorm" afterPath="$PROJECT_DIR$/Cobb_Daniel_Flowchart_Assignment/Cobb_Daniel_Flowchart_Brainstorm" />
     </list>
     <ignored path="Cobb_Daniel_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="Cobb_Daniel_Flowchart_Brainstorm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Cobb_Daniel_Flowchart_Assignment/Cobb_Daniel_Flowchart_Brainstorm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3270349">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.1744186">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -255,8 +254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cobb_Daniel_Flowchart_Assignment/Cobb_Daniel_Flowchart_Brainstorm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3270349">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.1744186">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding />
         </state>
       </provider>

@@ -6,21 +6,24 @@ September 1, 2015
 Go with what you know: Operating Front End Loader Trash Truck
 Current job for 1+yrs
 
-Start
-    Is dumpster blocked
+Start  // Start
+    Is dumpster blocked // Conditional
 Yes>>Stop
         No
-            Lower forks and arms
-                Insert into dumpster
-                    Is dumpster secure?
+            Lower forks and arms // Basic
+                Insert into dumpster // Basic
+                    Is dumpster secure? // Conditional
                 No>>return to insert
                     Yes
-                        Lift and dump into truck
-                            Dumpster empty
-                                No>>Shake dumpster
+                        Lift and dump into truck // Basic
+                            Dumpster empty // Conditional
+                            No>>Shake dumpster
                                 Yes
-                                    Lower dumpster
-                                        Back out from dumpster
-                                            Is dumpster free
+                                    Lower dumpster // Basic
+                                        Back out from dumpster // Basic
+                                            Is dumpster free // Conditional
                                         No>> make adjustments return to back out
-                                            Yes>> Stop
+                                            Yes>> Stop //Stop
+
+Total Conditional: 4
+Total Basic: 5
