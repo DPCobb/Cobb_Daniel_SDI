@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a395c982-62c1-4720-aeb3-4d75f4fb8458" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cobb_Daniel_Flowchart_Assignment/Cobb_Daniel_Flowchart_Brainstorm" afterPath="$PROJECT_DIR$/Cobb_Daniel_Flowchart_Assignment/Cobb_Daniel_Flowchart_Brainstorm" />
-    </list>
+    <list default="true" id="a395c982-62c1-4720-aeb3-4d75f4fb8458" name="Default" comment="" />
     <ignored path="Cobb_Daniel_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
