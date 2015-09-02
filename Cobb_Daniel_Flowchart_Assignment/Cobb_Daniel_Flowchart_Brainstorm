@@ -22,7 +22,7 @@ Yes>>Stop
                                     Lower dumpster // Basic
                                         Back out from dumpster // Basic
                                             Is dumpster free // Conditional
-                                        No>> make adjustments return to back out
+                                        No>> make adjustments until free
                                             Yes>> Stop //Stop
 
 Total Conditional: 4
