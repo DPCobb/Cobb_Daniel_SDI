@@ -1,0 +1,29 @@
+Daniel Cobb
+September 02, 2015
+SDI Section 01 Problem Solving
+
+A Cat, a Parrot, and a Bag of Seed
+
+Define the problem:
+A man needs to move his cat, parrot, and seed across a river in his boat. The river has only room for him self and one additional item. He cannot leave the cat and bird together or the bird and seed.  The overall goal is to safely get all three to the other side.
+
+Break the problem apart:
+Limitations in this problem include the mode of transportation and the allowed combinations of items.  The sub goals of this problem are successfully transporting each item safely and making it across the river: Get the cat across without leaving it with the bird, get the bird across without leaving it with the seed. The bird is the key to this problem as it has the most limitations: no cat, no seed. Solve the bird’s movements and the problem is solved.
+
+Potential solutions:
+The problem does not say you can’t bring an animal back across the river once on the other side. If you can transport one more item in the boat, assuming you can move things back to the original side you have five options for movement.
+	Solution 1: Movement Sequence (Side A is original side B is far side):
+		Bird A>>B Leave at B
+		Cat A>>B Remove Bird from B
+		Bird B>>A Leave at A
+		Seed A>>B Take to B
+		Bird A>>B
+This solution moves each item across without leaving the cat and bird together alone or the bird and seed together alone.
+
+Evaluate:
+This is the only solution I can see with the given materials, constraints, and items. It meets all of the problems goals: get all three across, do not leave the bird and seed together, and do not leave the cat and bird together.
+
+Solution:
+In my solution the man first moves the bird to the far side (B side). He then returns to the original side (A Side). From there he moves the cat from A to B and returns to the A side with the bird. The man doesn’t leave the two alone, so the cat doesn’t eat the bird. The man then leaves the bird at A and moves the seed to B. Again, the bird and seed are not alone so the bird cannot eat the seed and the cat will not eat the seed. Next the man returns to A with no other items on his boat. He then brings the bird to B, he remains with the items and the movement is complete.
+
+To test this I created 3 squares in Google Draw and labeled them bird, cat, and seed. I drew a line down the middle and started moving the squares from one side to the other, paying attention to the combinations left alone and checking against the rules. The solution meets the set rules and successfully transports all items.
