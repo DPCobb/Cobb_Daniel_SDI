@@ -83,3 +83,69 @@ which resulted in 14 socks being needed. If the tie goes to the white socks then
 instructions explain to find the fewest number of socks to ensure one pair of each is grabbed 14 is the answer,
 because in the dark you cannot control which is picked first in a tie.
 
+Predicting fingers:
+
+Define the problem
+A girl is counting on her fingers on one hand. She starts on her thumb and counts to her little finger, then
+reverses the count starting with her index finger. When she reaches her thumb she starts back the other way with her
+index finger. If she continues this count what finger will she stop on at counts 10, 100, and 1000.
+
+Break the problem apart
+To solve this problem you need to figure out a pattern within how the numbers fall on the fingers. Figuring out a
+pattern to where the numbers fall should give the answer for 10, 100 and 1000.
+
+Potential solution:
+Numbers fall on the thumb in sets of 8: 1, 9, 17, etc. Because of this constant you would divide by 8 to see how many
+times the thumb lands within that number. The remainder is then related to the other fingers. The solution to this
+problem would be n % 8 = x. Assigning numbers to the fingers starting with 0 progressing from index finger as 0,
+thumb 1, index 2, etc. until 9 we mark the fingers to the options for x.
+	10 % 8 = 2
+		2 = index
+From this example you can see that ten would fall on the index finger.
+
+Evaluate:
+Finger assignments:
+0 Index
+1 Thumb
+2 Index
+3 Middle
+4 Ring
+5 Little
+6 Ring
+7 Middle
+8 Index
+9 Thumb
+
+10 % 8 = 2 Index
+100 % 8 = 4 Ring
+1000 % 8 = 0 Index
+
+Using this formula you could evaluate any number to find what finger it would land on. Further testing shows the
+following:
+11 % 8 = 3 Middle
+12 % 8 = 4 Ring
+24 % 8 = 0 Index
+30 % 8 = 6 Ring
+
+This are all outcomes I verified within a spreadsheet with numbers counted out to 30 based on the counting scheme given.
+
+Solution:
+The solution to this problem is found within the way the numbers fall on the hand. The thumb (since the count starts
+here) holds the important pattern of numbers falling in sets of 8. The thumb is number 1, 9, 17, 25, etc. From this
+point you count out from 0 – 9 in the pattern of Index, Thumb, Index, Middle etc. This assigns the fingers a remainder
+value for the solution. To find the remainder you use the mod function or divide to the nearest whole number. This
+formula ( Number % 8 = Remainder) then gives the finger any number will land on based on how many times that number
+can be divided by 8. Examples:
+
+	8 % 8 = 0
+The formula returns 0 because 8 divides by 8 with no remaining value. Using the number 0 we see that 8 falls on the
+index finger.
+Doing a quick count following the given problem verifies the finger.
+
+	17 % 8 = 1 (or 17/8= 2R1)
+		17 lands on the thumb, which is verified by counting the numbers out.
+
+	1000 % 8 = 0 Index finger
+		1000 divided by 8 equals 125 with no remainder, so again this
+		number is 0 which falls on the Index finger.
+
