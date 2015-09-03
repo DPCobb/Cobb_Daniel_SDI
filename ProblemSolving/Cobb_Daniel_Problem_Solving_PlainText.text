@@ -41,3 +41,45 @@ other items on his boat. He then brings the bird to B, he remains with the items
 To test this I created 3 squares in Google Draw and labeled them bird, cat, and seed. I drew a line down the middle
 and started moving the squares from one side to the other, paying attention to the combinations left alone and
 checking against the rules. The solution meets the set rules and successfully transports all items.
+
+Socks in the dark:
+
+Define the problem:
+There are 20 socks in a drawer that you cannot see into. There are 5 pair black, 3 pair brown, 2 pair white.
+Selecting the fewest socks, how can you guarantee one matching pair and a matching pair of each.
+
+Break the problem apart:
+I see this as one smaller problem, how many socks(n) needed to guarantee one pair? Three pairs should then be 3(n).
+
+Potential solution:
+For one matching pair: 4 socks
+	By  >=4 socks you should have one pair.
+If finding one pair takes 4 socks finding 3 should be 3(4), 12 socks
+
+Evaluate:
+One pair:
+To guarantee one pair you must grab four socks:
+Two socks could be a pair but could also be black/white or black/brown or brown/white: 25% chance of pair
+Three socks could be one of each or a pair: 50% chance of pair
+Four socks guarantee a pair.
+
+To guarantee one pair of each you should grab 12 socks. If four socks produce one pair then 12 socks should produce 3
+pairs. To test this I created a spreadsheet that calculated the chance of picking that sock from the drawer. The
+answer I got, following highest percent or picking white socks last in case of a tie, shows 3n could be wrong and
+cannot guarantee one pair of each, but if you select a white sock in the case of a tie before other socks 3n is
+correct. Being in a dark room you couldn’t control the first pick in a tie, so the worst case scenario would
+guarantee one pair of each, 14 socks, and change the formula to 3n + a. “a” would be additional pairs from the
+initial one pair. To test this I tried to see if 2 pairs would evaluate to 2(4)+1 = 9. This formula came out true in
+the case of 2 pairs.
+
+Solution:
+
+I based my solution on worst-case scenario. To ensure you grab one matching pair you should grab at least four socks.
+This guarantees that you will have at least one pair within the four if you grab one of each sock within the first
+three socks, or number of sock colors + 1 = n. To calculate a guaranteed 3 pairs you need to grab 14 socks. This
+formula is 3(4) + 2. The +2 represents the additional pairs from the initial first pair. While testing this formula,
+in the case of a probability tie between white socks and brown or black socks I did not select the white sock first,
+which resulted in 14 socks being needed. If the tie goes to the white socks then the equation would be 3(4). Since the
+instructions explain to find the fewest number of socks to ensure one pair of each is grabbed 14 is the answer,
+because in the dark you cannot control which is picked first in a tie.
+
