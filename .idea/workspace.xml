@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a395c982-62c1-4720-aeb3-4d75f4fb8458" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProblemSolving/Cobb_Daniel_Problem_Solving.docx" afterPath="$PROJECT_DIR$/ProblemSolving/Cobb_Daniel_Problem_Solving.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProblemSolving/Cobb_Daniel_Problem_Solving_PlainText.text" afterPath="$PROJECT_DIR$/ProblemSolving/Cobb_Daniel_Problem_Solving_PlainText.text" />
-    </list>
+    <list default="true" id="a395c982-62c1-4720-aeb3-4d75f4fb8458" name="Default" comment="" />
     <ignored path="Cobb_Daniel_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -218,8 +215,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1400" height="785" extended-state="1" />
-    <editor active="true" />
+    <frame x="20" y="43" width="1400" height="785" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
