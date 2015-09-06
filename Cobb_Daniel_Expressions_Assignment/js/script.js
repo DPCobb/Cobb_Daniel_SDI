@@ -36,6 +36,14 @@ console.log(costTrip + " dollars to complete trip");
 var totTank = (tripLen/estMpg) / tankSize;
 console.log(totTank + " tanks of gas");
 
+// Limit results of costTrip to hundredths
+var costTrip = costTrip.toFixed(2);
+console.log (costTrip + " dollars to complete trip rounded");
+
+// Limit tanks to tenths of a gallon
+var totTank = totTank.toFixed(1);
+console.log(totTank + " tanks of gas rounded")
+
 // Tell user the cost of their trip and how many tanks of fuel
 alert(user + " your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");
 console.log(user + " your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");
