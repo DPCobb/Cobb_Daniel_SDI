@@ -42,7 +42,7 @@ console.log (costTrip + " dollars to complete trip rounded");
 
 // Limit tanks to tenths of a gallon
 var totTank = totTank.toFixed(1);
-console.log(totTank + " tanks of gas rounded")
+console.log(totTank + " tanks of gas rounded");
 
 // Tell user the cost of their trip and how many tanks of fuel
 if (totTank == 1){
@@ -54,10 +54,11 @@ else{
 console.log(user + " your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");
 
 // Add 5 miles for rest stops, refueling, breaks etc
-var tripLen = parseInt(tripLen)
+var tripLen = parseInt(tripLen);
 var tripLen = tripLen += 5;
 
 //Recalculate values
+console.log("Add 5 miles to account for rest breaks, refuels, detours etc")
 // Calculate the cost of the trip by total gallons of gas: (tripLen/estMpg)*fuelCost
 var costTrip = (tripLen/estMpg) * fuelCost;
 console.log(costTrip + " dollars to complete trip");
@@ -72,7 +73,7 @@ console.log (costTrip + " dollars to complete trip rounded");
 
 // Limit tanks to tenths of a gallon
 var totTank = totTank.toFixed(1);
-console.log(totTank + " tanks of gas rounded")
+console.log(totTank + " tanks of gas rounded");
 
 // Tell user the cost of their trip and how many tanks of fuel
 if (totTank == 1){
