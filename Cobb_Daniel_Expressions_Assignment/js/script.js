@@ -45,5 +45,40 @@ var totTank = totTank.toFixed(1);
 console.log(totTank + " tanks of gas rounded")
 
 // Tell user the cost of their trip and how many tanks of fuel
-alert(user + " your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");
+if (totTank == 1){
+    alert("Your trip will cost " + costTrip + " dollars and use about " + totTank + " tank of gas.");}
+else if (totTank <=1){
+    alert("Your trip will cost " + costTrip + " dollars and use less than 1 tank of gas.");}
+else{
+    alert("Your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");};
+console.log(user + " your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");
+
+// Add 5 miles for rest stops, refueling, breaks etc
+var tripLen = parseInt(tripLen)
+var tripLen = tripLen += 5;
+
+//Recalculate values
+// Calculate the cost of the trip by total gallons of gas: (tripLen/estMpg)*fuelCost
+var costTrip = (tripLen/estMpg) * fuelCost;
+console.log(costTrip + " dollars to complete trip");
+
+// Calculate how many tanks of gas your trip will take
+var totTank = (tripLen/estMpg) / tankSize;
+console.log(totTank + " tanks of gas");
+
+// Limit results of costTrip to hundredths
+var costTrip = costTrip.toFixed(2);
+console.log (costTrip + " dollars to complete trip rounded");
+
+// Limit tanks to tenths of a gallon
+var totTank = totTank.toFixed(1);
+console.log(totTank + " tanks of gas rounded")
+
+// Tell user the cost of their trip and how many tanks of fuel
+if (totTank == 1){
+    alert("Accounting for stops and detours, your trip will cost " + costTrip + " dollars and use about " + totTank + " tank of gas.");}
+else if (totTank <=1){
+    alert("Accounting for stops and detours, your trip will cost " + costTrip + " dollars and use less than 1 tank of gas.");}
+else{
+    alert("Accounting for stops and detours, your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");};
 console.log(user + " your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");
