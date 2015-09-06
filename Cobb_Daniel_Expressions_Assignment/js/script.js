@@ -12,5 +12,5 @@ Expressions Assignment
 var user = prompt("We are going to calculate the cost of your trip.\nPlease enter your name");
 console.log(user);
 // Ask user for length of trip in miles
-var tripLen = prompt(user + " enter the length of your trip");
+var tripLen = prompt(user + " enter the length of your trip in miles");
 console.log(tripLen + " miles total");
