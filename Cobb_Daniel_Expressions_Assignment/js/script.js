@@ -35,3 +35,7 @@ console.log(costTrip + " dollars to complete trip");
 // Calculate how many tanks of gas your trip will take
 var totTank = (tripLen/estMpg) / tankSize;
 console.log(totTank + " tanks of gas");
+
+// Tell user the cost of their trip and how many tanks of fuel
+alert(user + " your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");
+console.log(user + " your trip will cost " + costTrip + " dollars and use about " + totTank + " tanks of gas.");
