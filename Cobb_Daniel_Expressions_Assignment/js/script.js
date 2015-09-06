@@ -30,4 +30,8 @@ console.log(fuelCost + " dollars per gallon");
 
 // Calculate the cost of the trip by total gallons of gas: (tripLen/estMpg)*fuelCost
 var costTrip = (tripLen/estMpg) * fuelCost;
-console.log(costTrip + " dollars");
+console.log(costTrip + " dollars to complete trip");
+
+// Calculate how many tanks of gas your trip will take
+var totTank = (tripLen/estMpg) / tankSize;
+console.log(totTank + " tanks of gas");
