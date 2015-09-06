@@ -75,7 +75,7 @@ console.log (costTrip + " dollars to complete trip rounded");
 var totTank = totTank.toFixed(1);
 console.log(totTank + " tanks of gas rounded");
 
-// Tell user the cost of their trip and how many tanks of fuel
+// Tell user the cost of their trip and how many tanks of fuel with 5 extra miles for stops and detours
 if (totTank == 1){
     alert("Accounting for stops and detours, your trip will cost " + costTrip + " dollars and use about " + totTank + " tank of gas.");}
 else if (totTank <=1){
