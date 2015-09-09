@@ -5,7 +5,6 @@ Expressions Assignment
 9-5-15
  */
 
-//alert("test");
 
 // Calculate fuel cost and how many tanks of gas a trip will take
 
