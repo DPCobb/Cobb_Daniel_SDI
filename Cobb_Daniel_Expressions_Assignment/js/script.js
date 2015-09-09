@@ -27,7 +27,7 @@ console.log(tankSize + " total gallons per full tank.");
 // Ask for average cost of fuel per gallon
 var fuelCost = prompt("Enter average cost of fuel per gallon");
 console.log(fuelCost + " dollars per gallon fuel cost.");
-
+fuelCost = fuelCost.replace("$", "0")
 // Calculate the cost of the trip by total gallons of gas: (tripLen/estMpg)*fuelCost
 var costTrip = (tripLen/estMpg) * fuelCost;
 console.log(costTrip + " dollars to complete trip.");
