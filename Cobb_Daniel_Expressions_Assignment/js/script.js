@@ -5,7 +5,7 @@ Expressions Assignment
 9-5-15
  */
 
-//alert("test")
+//alert("test");
 
 // Calculate fuel cost and how many tanks of gas a trip will take
 
@@ -45,8 +45,10 @@ console.log (costTrip + " dollars to complete trip rounded to nearest hundredth.
 totTank = totTank.toFixed(1);
 console.log(totTank + " tanks of gas rounded to nearest tenth.");
 
-// Tell user the cost of their trip and how many tanks of fuel
+// Tell user the cost of their trip and how many tanks of fuel it will take
+// Place possible messages to user in an Array, different outputs based on tanks of fuel
 var tripOut = ["Your trip will cost $" + costTrip + " and use about " + totTank + " tank of gas.", "Your trip will cost $" + costTrip + " and use less than 1 tank of gas.", "Your trip will cost $" + costTrip + " and use about " + totTank + " tanks of gas."];
+// Decide which message to send user based on tanks of fuel
 if (totTank == 1){
     alert(tripOut[0]);}
 else if (totTank <=1){
@@ -78,7 +80,9 @@ totTankMod = totTankMod.toFixed(1);
 console.log(totTankMod + " tanks of gas rounded to nearest tenth to complete modified trip.");
 
 // Tell user the cost of their trip and how many tanks of fuel with 5 extra miles for stops and detours
+// Place possible messages to user in an Array, different outputs based on tanks of fuel
 var tripOutMod = ["Accounting for stops and detours, your trip will cost $" + costTripMod + " and use about " + totTankMod + " tank of gas.", "Accounting for stops and detours, your trip will cost $" + costTripMod + " and use less than 1 tank of gas.", "Accounting for stops and detours, your trip will cost $" + costTripMod + " and use about " + totTankMod + " tanks of gas."];
+// Decide which message to send user based on tanks of fuel
 if (totTankMod == 1){
     alert(tripOutMod[0]);}
 else if (totTankMod <=1){
@@ -86,3 +90,30 @@ else if (totTankMod <=1){
 else{
     alert(tripOutMod[2]);}
 console.log(user + "'s trip will cost $" + costTripMod + " and use about " + totTankMod + " tanks of gas after the addition of 5 miles.");
+
+
+/* Tested with the following values:
+Total miles: 100
+MPG: 10
+Tank Size: 10
+Fuel Cost: 1.00
+Evaluates to: $10 and 1 tank of gas
+    100miles/10mpg = 10 gal of gas = 1 tank of gas
+    10 gal of gas * 1.00 fuel cost = $10
+After additional 5 miles:
+Evaluates to: $10.50 and 1.1 tanks of gas
+    105miles/10mpg = 10.5 gal of gas = 1.1 tanks of gas
+    10.5 gal of gas * 1.00 fuel cost = $10.50
+
+Total miles: 250
+MPG: 25
+Tank Size: 10
+Fuel Cost: 2.00
+Evaluates to: $20 and 1 tank of gas
+    250/25 = 10 = 1 tank of gas
+    10 * 2 = $20 of gas
+After additional 5 miles:
+Evaluates to: $20.40 and 1 tanks of gas
+    255/25 = 10.2 = 1.02 tanks of gas
+    10.2 * 2 = $20.40 of gas
+ */
