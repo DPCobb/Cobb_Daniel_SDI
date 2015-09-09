@@ -90,7 +90,24 @@ else if (totTankMod <=1){
 else{
     alert(tripOutMod[2]);}
 console.log(user + "'s trip will cost $" + costTripMod + " and use about " + totTankMod + " tanks of gas after the addition of 5 miles.");
-
+// Give additional information on cost due to extra miles
+console.log("Additional mileage cost:");
+// Set miles into array
+var addMile = [5, 50, 100];
+// Determine extra cost for added 5 miles
+var extraCost = (addMile[0]/estMpg) * fuelCost;
+// Limit extra cost to hundredth place
+extraCost = extraCost.toFixed(2);
+// Display extra cost information
+console.log("If " + user + " travels 5 miles more it will add an additional $" + extraCost);
+// Determine extra cost for additional 50 miles, limit decimal place, and display information
+extraCost = (addMile[1]/estMpg) * fuelCost;
+extraCost = extraCost.toFixed(2);
+console.log("If " + user + " travels 50 miles more it will add an additional $" + extraCost);
+// Determine extra cost for additional 100 miles, limit decimal place, and display information
+extraCost = (addMile[2]/estMpg) * fuelCost;
+extraCost = extraCost.toFixed(2);
+console.log("If " + user + " travels 100 miles more it will add an additional $" + extraCost);
 
 /* Tested with the following values:
 Total miles: 100
@@ -104,6 +121,7 @@ After additional 5 miles:
 Evaluates to: $10.50 and 1.1 tanks of gas
     105miles/10mpg = 10.5 gal of gas = 1.1 tanks of gas
     10.5 gal of gas * 1.00 fuel cost = $10.50
+Additional Cost: $.5, $5, $10
 
 Total miles: 250
 MPG: 25
@@ -116,4 +134,5 @@ After additional 5 miles:
 Evaluates to: $20.40 and 1 tanks of gas
     255/25 = 10.2 = 1.02 tanks of gas
     10.2 * 2 = $20.40 of gas
+Additional Cost: $.4, $4, $8
  */
