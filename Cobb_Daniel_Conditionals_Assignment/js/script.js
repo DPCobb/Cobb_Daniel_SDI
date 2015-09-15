@@ -84,8 +84,17 @@ var truckTotal = parseInt(truckEmpty) + parseInt(lbs);
 console.log(truckTotal + " lbs is the total weight of the truck");
 //Compare truckTotal to truckMax to figure out if the truck is over/under max weight
 var over = parseInt(truckTotal) - parseInt(truckMax);
+var under = parseInt(truckMax) - parseInt(truckTotal);
+//Alert user to trucks weight over, under, or at max
 if (truckTotal > truckMax){
     alert(user + " your vehicle is overweight at " + truckTotal + " lbs! You are " + over + " lbs over your max weight of " + truckMax + " lbs!");
     console.log(user + " your vehicle is overweight at " + truckTotal + " lbs! You are " + over + " lbs over your max weight of " + truckMax + " lbs!");
-
+}
+else if(truckTotal < truckMax){
+    alert(user + " your vehicle is underweight at " + truckTotal + " lbs! You are " + under + " lbs under your max weight of " + truckMax + " lbs!");
+    console.log(user + " your vehicle is underweight at " + truckTotal + " lbs! You are " + under + " lbs under your max weight of " + truckMax + " lbs!");
+}
+else{
+    alert(user + " your vehicle is at its max weight of " + truckMax + " lbs!");
+    console.log(user + " your vehicle is at its max weight of " + truckMax + " lbs!");
 }
