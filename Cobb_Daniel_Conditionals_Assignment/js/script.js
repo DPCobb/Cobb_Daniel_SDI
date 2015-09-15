@@ -58,7 +58,22 @@ var loadCheck = loadWeight.length;
 console.log(user + " is carrying " + loadWeight + " tons.");
 //Ask for trucks max weight
 var truckMax = prompt(user + " please enter your trucks Gross Vehicle Weight Rating(GVWR) in pounds");
-
+//Verify GVWR is not empty, is a number, and is greater than truckEmpty
+if (truckMax == ""){
+    truckMax = prompt(user + " this field cannot be empty, please enter your vehicles GVWR in pounds");
+    console.log(user + "'s vehicle has a maximum weight of " + truckMax);
+}
+else if (/[a-z, A-Z]/.test(truckMax)) {
+     truckMax = prompt(user + " your GVWR cannot contain letters, please re enter");
+     console.log(user + "'s vehicle has a maximum weight of " + truckMax);
+ }
+else if (parseInt(truckMax) < parseInt(truckEmpty)) {
+    truckMax = prompt(user + " your GVWR shouldn't be lower than your empty truck weight of " + truckEmpty + " please re enter GVWR");
+    console.log(user + "'s vehicle has a maximum weight of " + truckMax);
+}
+ else{
+    console.log(user + "'s vehicle has a maximum weight of " + truckMax);
+}
 //Set ton to lbs
 var lbs = parseInt(loadWeight)*2000;
 console.log(loadWeight + " tons is " + lbs + " lbs.");
