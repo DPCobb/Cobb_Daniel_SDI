@@ -77,7 +77,7 @@ else{
     console.log(user + "'s vehicle has a maximum weight of " + truckMax);
 }
 //Set loadWeight from tons to lbs
-var lbs = parseInt(loadWeight)*2000;
+var lbs = parseInt(loadWeight) * 2000;
 console.log(loadWeight + " tons is " + lbs + " lbs.");
 //Get total truck weight by combining empty weight and load weight
 var truckTotal = parseInt(truckEmpty) + parseInt(lbs);
