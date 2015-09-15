@@ -56,6 +56,9 @@ var loadWeight = prompt(user + " what is the weight of the load you will be carr
 var loadCheck = loadWeight.length;
 (parseInt(loadCheck) <= 2 && loadWeight != "" && /^[0-9]+$/.test(loadWeight)) ?  console.log("Load weight is valid") : loadWeight = prompt(user + " please re enter the weight of your load in tons");
 console.log(user + " is carrying " + loadWeight + " tons.");
+//Ask for trucks max weight
+var truckMax = prompt(user + " please enter your trucks Gross Vehicle Weight Rating(GVWR) in pounds");
+
 //Set ton to lbs
 var lbs = parseInt(loadWeight)*2000;
 console.log(loadWeight + " tons is " + lbs + " lbs.");
