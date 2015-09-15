@@ -7,8 +7,11 @@ September 2013, 2015
  */
 
 //alert("test")
+
+//Determine the weight of a truck carrying a load and determine if the truck is overweight and if so by how much.
+
 //Explain to the user what we are doing and get their name.
-var user = prompt("We are going to calculate the weight of your truck\nFirst off, what's your name?");
+var user = prompt("We are going to calculate the weight of your truck and determine if it is overweight\nFirst off, what's your name?");
 //Check to make sure user is not empty
 if (user == "") {
     user = prompt("Looks like you forgot to introduce yourself, what's your name?");
@@ -24,11 +27,12 @@ else {
 }
 //Ask the user for the weight of their unloaded truck
 var truckEmpty = prompt(user + " what is the weight of your truck in pounds while empty?");
-//Check if truck weight is in lbs
+//Set up truckCheck variable, used to check if truckEmpty is in pounds
 var truckCheck = truckEmpty.length;
-//Check if truck weight contains only numbers
+//Set up truckLbs variable, used to check if truckEmpty only contains numbers
 var truckLbs = (/^[0-9]+$/.test(truckEmpty));
-//Ensure truck weight is in lbs, greater than 999 and is only numbers
+//Validate truckEmpty
+//Check truck weight is in lbs, greater than 999, and is only numbers
 if (truckCheck < 4 && truckLbs){
     truckEmpty = prompt(user + " you may have entered the weight of your truck in tons, please enter the weight of your truck in lbs.");
     console.log(user + "'s truck weighs " + truckEmpty + " lbs while empty");
@@ -54,7 +58,7 @@ var loadCheck = loadWeight.length;
 console.log(user + " is carrying " + loadWeight + " tons.");
 //Set ton to lbs
 var lbs = parseInt(loadWeight)*2000;
-console.log(loadWeight + " tons is " + lbs + " lbs.")
+console.log(loadWeight + " tons is " + lbs + " lbs.");
 //Get total truck weight by combining empty weight and load weight
 var truckTotal = parseInt(truckEmpty) + parseInt(lbs);
 console.log(truckTotal + " lbs is the total weight of the truck");
