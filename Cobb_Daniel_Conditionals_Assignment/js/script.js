@@ -46,13 +46,12 @@ else if (truckEmpty == ""){
 else {
     console.log(user + "'s truck weighs " + truckEmpty + " lbs while empty");
 }
-
 //Ask the user for the weight of their load
 var loadWeight = prompt(user + " what is the weight of the load you will be carrying in tons?");
-//check loadWeight is tons and not lbs
+//Check loadWeight is in lbs, is not an empty string, and only contains numbers
 var loadCheck = loadWeight.length;
-(loadCheck > 2) ?  loadWeight = prompt(user + " please re enter the weight of your load in tons") : console.log("Weight ok");
-console.log(user + " will be carrying " + loadWeight + "tons");
+(parseInt(loadCheck) <= 2 && loadWeight != "" && /^[0-9]+$/.test(loadWeight)) ?  console.log("Load weight is valid") : loadWeight = prompt(user + " please re enter the weight of your load in tons");
+console.log(user + " is carrying " + loadWeight + " tons.");
 //Set ton to lbs
 var lbs = parseInt(loadWeight)*2000;
 console.log(loadWeight + " tons is " + lbs + " lbs.")
