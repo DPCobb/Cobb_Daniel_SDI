@@ -6,6 +6,7 @@ September 17, 2015
  */
 
 //Stuff your face I
+console.log("'Stuff your face'");
 //Get users weight and set the minimum weight for the heavyweight division
 var weight = prompt("Please enter your weight so we can see if you qualify for the heavyweight division");
 var weightMin = 250;
@@ -20,6 +21,7 @@ else{
 }
 
 //Last Chance For Gas!
+console.log("'Last chance for gas'");
 //Determine if user has enough gas left to travel a given distance
 
 var distToNextGas = prompt("Please enter the miles until the next gas station");
@@ -41,5 +43,32 @@ if(gasReq > currentTank){
 }
 else{
     alert("You have enough gas to make the trip");
+}
+
+//Check the login
+console.log("'Check the login'");
+//Determine if user has correct login/password
+
+var userName = "admin";
+var pass = "password";
+var user = prompt("Please enter your user name:");
+var userPass = prompt("Please enter your password");
+
+//Validate user inputs against set values
+
+if(user === userName && pass === userPass){
+    alert("Welcome " + user + "!");
+    console.log("Success");
+}
+else if(user != userName){
+    alert("User not found, try again");
+    console.log("No match for user");
+}
+else if(pass != userPass){
+    alert("Password doesn't match our records, please try again");
+    console.log("Password doesn't match");
+}
+else{
+    alert("Please try again");
 }
 
