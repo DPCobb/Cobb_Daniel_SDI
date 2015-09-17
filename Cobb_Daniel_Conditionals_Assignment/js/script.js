@@ -57,11 +57,11 @@ else {
 }
 
 //Ask the user for the weight of their load
-var loadWeight = prompt(user + " what is the weight of the load you will be carrying in tons?");
+var loadWeight = prompt(user + " what is the weight of the load you will be carrying in pounds?");
 
-//Check loadWeight is in tons, is not an empty string, and only contains numbers
+//Check loadWeight is in pounds, is not an empty string, and only contains numbers
 var loadCheck = loadWeight.length;
-(parseInt(loadCheck) <= 2 && loadWeight != "" && /^[0-9]+$/.test(loadWeight)) ?  console.log("Load weight is valid") : loadWeight = prompt(user + " please re enter the weight of your load in tons");
+(parseInt(loadCheck) >= 3 && loadWeight != "" && /^[0-9]+$/.test(loadWeight)) ?  console.log("Load weight is valid") : loadWeight = prompt(user + " please re enter the weight of your load in pounds");
 console.log(user + " is carrying " + loadWeight + " tons.");
 
 //Ask for trucks max weight
@@ -85,18 +85,19 @@ else{
     console.log(user + "'s vehicle has a maximum weight of " + truckMax);
 }
 
-//Set loadWeight from tons to lbs
-var lbs = parseInt(loadWeight) * 2000;
-console.log(loadWeight + " tons is " + lbs + " lbs.");
-
 //Get total truck weight by combining empty weight and load weight
-var truckTotal = parseInt(truckEmpty) + parseInt(lbs);
+var truckTotal = parseInt(truckEmpty) + parseInt(loadWeight);
 console.log(truckTotal + " lbs is the total weight of the truck");
+//Parse inputs into numbers
+var truckMaxVal = parseInt(truckMax);
+var truckTotalVal = parseInt(truckTotal);
+var truckEmptyVal = parseInt(truckEmpty);
+var loadWeightVal = parseInt(loadWeight);
 //Determine if any values are NaN
-var truckTotalNan = isNaN(truckTotal);
-var truckMaxNan = isNaN(truckTotal);
-var truckEmptyNan = isNaN(truckTotal);
-var loadWeightNan = isNaN(truckTotal);
+var truckTotalNan = isNaN(truckTotalVal);
+var truckMaxNan = isNaN(truckMaxVal);
+var truckEmptyNan = isNaN(truckEmptyVal);
+var loadWeightNan = isNaN(loadWeightVal);
 //Check to make sure no entries are empty
 if (truckTotalNan || truckMaxNan || truckEmptyNan || loadWeightNan){
     alert(user + " something went wrong, one of your entries is not a number, please try again");
