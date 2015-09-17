@@ -3,7 +3,7 @@
 Daniel Cobb
 SDI Section 01
 Conditionals Assignment
-September 2013, 2015
+September 13, 2015
  */
 
 //alert("test")
@@ -61,8 +61,8 @@ var loadWeight = prompt(user + " what is the weight of the load you will be carr
 
 //Check loadWeight is in pounds, is not an empty string, and only contains numbers
 var loadCheck = loadWeight.length;
-(parseInt(loadCheck) >= 3 && loadWeight != "" && /^[0-9]+$/.test(loadWeight)) ?  console.log("Load weight is valid") : loadWeight = prompt(user + " please re enter the weight of your load in pounds");
-console.log(user + " is carrying " + loadWeight + " tons.");
+(parseInt(loadCheck) >= 4 && loadWeight != "" && /^[0-9]+$/.test(loadWeight)) ?  console.log("Load weight is valid") : loadWeight = prompt(user + " please re enter the weight of your load in pounds");
+console.log(user + " is carrying " + loadWeight + " lbs.");
 
 //Ask for trucks max weight
 var truckMax = prompt(user + " please enter your trucks Gross Vehicle Weight Rating(GVWR) in pounds");
@@ -88,16 +88,19 @@ else{
 //Get total truck weight by combining empty weight and load weight
 var truckTotal = parseInt(truckEmpty) + parseInt(loadWeight);
 console.log(truckTotal + " lbs is the total weight of the truck");
+
 //Parse inputs into numbers
 var truckMaxVal = parseInt(truckMax);
 var truckTotalVal = parseInt(truckTotal);
 var truckEmptyVal = parseInt(truckEmpty);
 var loadWeightVal = parseInt(loadWeight);
-//Determine if any values are NaN
+
+//Determine if any values are not a number
 var truckTotalNan = isNaN(truckTotalVal);
 var truckMaxNan = isNaN(truckMaxVal);
 var truckEmptyNan = isNaN(truckEmptyVal);
 var loadWeightNan = isNaN(loadWeightVal);
+
 //Check to make sure no entries are empty
 if (truckTotalNan || truckMaxNan || truckEmptyNan || loadWeightNan){
     alert(user + " something went wrong, one of your entries is not a number, please try again");
@@ -127,3 +130,42 @@ else {
         console.log(user + " your vehicle is at its max weight of " + truckMax + " lbs!");
     }
 }
+/*
+ Tested Validation with following values:
+ Name: 1 =  Validation error
+    Empty = Validation error
+ Truck Empty: 1a1 = Validation error
+    Empty: Validation error
+    10: Validation error
+ Load Weight: Empty = Validation error
+    10: Validation error
+    1a1: Validation error
+ Truck Max: Empty = Validation error
+    10: Validation error
+    1a1: Validation error
+    < Truck Empty: Validation error
+ Is NaN: Left one field blank after validation error within truckMax, truckEmpty, loadWeight each resulted in
+    a final error that stops the calculations from running. Then entered "a" on validation prompt in each which
+    resulted in stopped the final calculation.
+
+ Calculation Test:
+ Truck Empty: 1000
+ Load Weight 1000:
+ Truck Max: 4000
+ Result: 2000 lbs, underweight by 2000lbs
+
+ Truck Empty: 42,000
+ Load Weight: 20,550
+ Truck Max: 66,000
+ Result: 62,550 lbs, underweight by 3450
+
+ Truck Empty: 2000
+ Load Weight: 5000
+ Truck Max: 4000
+ Result: 7000 lbs, overweight by 3000
+
+ Truck Empty: 2000
+ Load Weight: 2000
+ Truck Max: 4000
+ Result: At max weight of 4000 lbs
+  */
