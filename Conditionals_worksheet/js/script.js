@@ -72,3 +72,25 @@ else{
     alert("Please try again");
 }
 
+//Movie Ticket Price
+console.log("'Movie ticket price'");
+//Determine users ticket price
+
+var time = prompt("Please enter the time of your movie");
+var age = prompt("Please enter your age");
+time = parseInt(time);
+age = parseInt(age);
+
+//Determine price
+
+if(age >= 55 || age < 10 ){
+    alert("Your ticket will cost $7");
+    console.log("Ticket price $7, age");
+}
+else if(time >= 3 && time <= 5){
+    alert("Your ticket price $7");
+    console.log("Ticket price $7, time");
+}
+else{
+    alert("Your ticket price is $12");
+}
