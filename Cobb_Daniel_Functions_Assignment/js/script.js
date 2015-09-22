@@ -24,8 +24,8 @@ September 22, 2015
 // Ask user for the information need for calculations
  var startMiles = prompt(user + " please enter your starting mileage.");
  var endMiles = prompt(user + " please enter your ending mileage.");
- var startTime = prompt(user + " please enter what time you starting driving, rounded to the nearest hour");
- var endTime = prompt(user + " please enter what time you stopped driving, rounded to the nearest hour");
+ var startTime = prompt(user + " please enter what time you starting driving, rounded to the nearest hour in 24hr format");
+ var endTime = prompt(user + " please enter what time you stopped driving, rounded to the nearest hour in 24hr format");
 
  //Set Function for total mile computation
 
@@ -39,5 +39,24 @@ September 22, 2015
  var trip = totalMiles(startMiles, endMiles);
  console.log(trip);
 
- //Set Function
+ //Set Function to calculate total hours driven
 
+ function totalHours(clockIn, clockOut){
+     var hoursTotal = clockOut - clockIn;
+     return hoursTotal;
+ }
+
+ //Call Function to calculate total hours driven
+
+ var hours = totalHours(startTime, endTime);
+ console.log(hours);
+
+ //Set Anon Function to calculate average miles driven each hour
+
+ var milesPerHour = function(miles, hour){
+     var avgMiles = miles / hour;
+     return avgMiles;
+ };
+
+ var tripOutPut = milesPerHour(trip,hours);
+ console.log(tripOutPut + " mph");
