@@ -23,31 +23,35 @@ September 22, 2015
  //Set Function for input validation
 
  function inputValidation(data){
-     var numVal = (/[a-z,A-Z]/.test(data))
-     while (data == "" || data == numVal){
+     var numTest = parseInt(data);
+     var numVal = isNaN(numTest);
+     while (data == "" || numVal == true){
          if (data == ""){
              data = prompt("You cannot leave this blank, please re enter.");
          }
-         else if (data == numVal) {
+         else {
              data = prompt("This entry can only contain numbers, please re enter");
+             numTest = parseInt(data);
+             numVal = isNaN(numTest);
          }
      }
+     return data;
  }
 
  // Print user to console log
  console.log(user + " is the current user");
 // Ask user for the information need for calculations and validate using inputValidation
  var startMiles = prompt(user + " please enter your starting mileage.");
- inputValidation(startMiles);
+ startMiles = inputValidation(startMiles);
 
  var endMiles = prompt(user + " please enter your ending mileage.");
- inputValidation(endMiles);
+ endMiles = inputValidation(endMiles);
 
  var startTime = prompt(user + " please enter what time you starting driving, rounded to the nearest hour in 24hr format");
- inputValidation(startTime);
+ startTime = inputValidation(startTime);
 
  var endTime = prompt(user + " please enter what time you stopped driving, rounded to the nearest hour in 24hr format");
- inputValidation(endTime);
+ endTime = inputValidation(endTime);
 
  //Set Function for total mile computation
 
