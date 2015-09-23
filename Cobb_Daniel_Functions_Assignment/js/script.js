@@ -28,7 +28,7 @@ September 22, 2015
  /*
  Set Function for input validation. Set up numVal which checks to see if data is a number.
  Feeds data into a while loop to check if empty or is not a number. Result is put through a conditional
- to select output based on which condition was true.
+ to select output based on which condition was true and error is sent to console.log.
   */
 
  function inputValidation(data){
