@@ -13,14 +13,22 @@ September 22, 2015
  var user = prompt("We are going to calculate the length in miles and hours and the average miles driven per hour for your trip.\nFirst, what is your name?");
  var userValid = (/[0-9]/.test(user));
 
- //Check if the user name is not empty and is only letters
+ /*
+ Check if the user name is not empty and is only letters
+ Looks for empty user field and tests if user is only letters
+ If empty or contains numbers then ask the user to re enter name and reset userValid check
+ */
 
  while (user =="" || userValid == true){
      user = prompt("Please enter your name");
      userValid = (/[0-9]/.test(user));
  }
 
- //Set Function for input validation
+ /*
+ Set Function for input validation. Set up numVal which checks to see if data is a number.
+ Feeds data into a while loop to check if empty or is not a number. Result is put through a conditional
+ to select output based on which condition was true.
+  */
 
  function inputValidation(data){
      var numTest = parseInt(data);
