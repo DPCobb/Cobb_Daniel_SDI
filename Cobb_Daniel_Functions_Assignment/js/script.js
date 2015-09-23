@@ -20,6 +20,7 @@ September 22, 2015
  */
 
  while (user =="" || userValid == true){
+     console.log("Validation Error: name cannot be empty or contain numbers.");
      user = prompt("Please enter your name");
      userValid = (/[0-9]/.test(user));
  }
@@ -34,12 +35,15 @@ September 22, 2015
      var numTest = parseInt(data);
      var numVal = isNaN(numTest);
      while (data == "" || numVal == true){
+
          if (data == ""){
+             console.log("Validation Error: this field cannot be blank.");
              data = prompt("You cannot leave this blank, please re enter.");
              numTest = parseInt(data);
              numVal = isNaN(numTest);
          }
          else {
+             console.log("Validation Error: " + data + " is not a number.");
              data = prompt("This entry can only contain numbers, please re enter");
              numTest = parseInt(data);
              numVal = isNaN(numTest);
