@@ -20,7 +20,7 @@ September 22, 2015
  */
 
  while (user =="" || userValid == true){
-     console.log("Validation Error: name cannot be empty or contain numbers.");
+     console.log("%c Validation Error: name cannot be empty or contain numbers.", "color:red");
      user = prompt("Please enter your name");
      userValid = (/[0-9]/.test(user));
  }
@@ -37,13 +37,13 @@ September 22, 2015
      while (data == "" || numVal == true){
 
          if (data == ""){
-             console.log("Validation Error: this field cannot be blank.");
+             console.log("%c Validation Error: this field cannot be blank.", "color:red");
              data = prompt("You cannot leave this blank, please re enter.");
              numTest = parseInt(data);
              numVal = isNaN(numTest);
          }
          else {
-             console.log("Validation Error: " + data + " is not a number.");
+             console.log("%c Validation Error: " + data + " is not a number.", "color:red");
              data = prompt("This entry can only contain numbers, please re enter");
              numTest = parseInt(data);
              numVal = isNaN(numTest);
@@ -109,7 +109,7 @@ September 22, 2015
  //Set anon function to give final information to user
 
  var userInfo = function(totMiles, totHours, avgMPH, name){
-     var out = name + " you drove a total of " + totMiles + " total miles over " + totHours + " total hours at an average of " + avgMPH + " miles driven per hour.";
+     var out = name + " you drove a total of " + totMiles + " miles over " + totHours + " total hours at an average of " + avgMPH + " miles driven per hour.";
      return out;
  };
 
