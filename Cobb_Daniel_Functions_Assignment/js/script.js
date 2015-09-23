@@ -36,6 +36,8 @@ September 22, 2015
      while (data == "" || numVal == true){
          if (data == ""){
              data = prompt("You cannot leave this blank, please re enter.");
+             numTest = parseInt(data);
+             numVal = isNaN(numTest);
          }
          else {
              data = prompt("This entry can only contain numbers, please re enter");
