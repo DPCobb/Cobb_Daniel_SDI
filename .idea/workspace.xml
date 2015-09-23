@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a395c982-62c1-4720-aeb3-4d75f4fb8458" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cobb_Daniel_Functions_Assignment/js/script.js" afterPath="$PROJECT_DIR$/Cobb_Daniel_Functions_Assignment/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cobb_Daniel_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Cobb_Daniel_Functions_Assignment/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3270349">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+            <state vertical-scroll-proportion="1.2834302">
+              <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -416,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cobb_Daniel_Functions_Assignment/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3270349">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        <state vertical-scroll-proportion="1.2834302">
+          <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
           <folding />
         </state>
       </provider>

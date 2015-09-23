@@ -119,4 +119,32 @@ September 22, 2015
  alert(finalOutput);
  console.log(finalOutput);
 
+ /*
+
+ Test Values:
+ Start miles: 0
+ End miles: 100
+ Start time: 1
+ End time: 11
+ 100 - 0 = 100 miles total
+ 11 - 1 = 10 hours total
+ 100/10 = 10 miles per hour
+ Answer from script: 100 miles total in 10 hours at 10 miles an hour
+
+ Test Values:
+ Start miles: 15000
+ End miles: 15650
+ Start time: 1
+ End time: 11
+ 15650 - 15000 = 650 miles total
+ 11 - 1 = 10 hours total
+ 650/10 = 65 miles per hour
+ Answer from script: 650 miles total in 10 hours at 65 miles an hour
+
+ Tested user input with blank, 1111, 1a1a: All resulted in Errors
+ Tested Start/End miles and time with: blank, 1a1a, aaaa: All resulted in error
+ Tested each validation with improper inputs followed by the correct input: script continued.
+
+  */
+
 
